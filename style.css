@@ -1,0 +1,119 @@
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    background: #f4fdff; 
+    margin: 0; 
+    padding: 20px; 
+    color: #6f8695; 
+  } 
+  
+  h1 { 
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: navy; 
+  } 
+  .welcome-text { 
+    max-width: 700px; 
+    margin: 0 auto 20px; 
+    font-size: 1.1rem; 
+    line-height: 1.7; 
+    text-align: center; 
+    background-color: #05204a; 
+    padding: 12px 18px; 
+    border-radius: 10px; 
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.05); 
+  } 
+  .slider { 
+    position: relative; 
+    max-width: 700px; 
+    margin: 20px auto; 
+    overflow: hidden; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+  } 
+  
+  .slider img { 
+    width: 100%; 
+    height: 350px; /* or whatever height you need */
+    object-fit: cover;
+    display: none; 
+  }
+  .slider img.active { 
+    display: block; 
+  } 
+  
+  .rice-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 30px; 
+  } 
+  
+  .rice-box { 
+    background-color: #fff9f2; 
+    border: 2px solid #05204a; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+    padding: 15px; 
+    width: 300px; 
+    text-align: center; 
+    transition: transform 0.2s ease; 
+  } 
+  
+  .rice-box:hover { 
+    transform: scale(1.03); 
+    border: 4px soild #0b2958;
+    border-radius: 18px;
+  } 
+  
+  .rice-box img { 
+    width: 100%; 
+    height: 200px; /* or any height you prefer */
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-bottom: 12px; 
+  }
+  
+  .rice-box button { 
+    padding: 8px 16px; 
+    background-color: #05204a; 
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    cursor: pointer; 
+  } 
+  
+  .rice-box button:hover { 
+    background-color: #f4fdff;
+    color: #05204a; 
+    border-radius: 10px;
+  } 
+  
+  /* Watermark */ 
+  .watermark { 
+    position: fixed; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 13px; 
+    font-weight: bold; 
+    color: rgba(0, 0, 0, 0.3); 
+    pointer-events: none; 
+  } 
+  
+  /* Responsive */ 
+  @media screen and (max-width: 600px) { 
+    .rice-container { 
+      flex-direction: column; 
+      align-items: center; 
+    } 
+  
+    .rice-box { 
+      width: 90%; 
+    } 
+  
+    h1 { 
+      font-size: 2rem; 
+    }
+}
